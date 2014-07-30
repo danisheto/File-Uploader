@@ -1,0 +1,20 @@
+window.onload=function(){
+	document.getElementById("fileUpload").onchange=function(){
+		file=this.files[0]
+	}
+	document.getElementById("dropArea").ondragenter=function(e){
+		e.stopPropagation();
+		e.preventDefault();
+		this.style.backgroundColor="#F8F8F8";
+		this.style.borderColor="#737373";
+	}
+	document.getElementById("dropArea").ondragover=function(e){
+		e.stopPropagation();
+		e.preventDefault();
+	}
+	document.getElementById("dropArea").ondrop=function(e){
+		e.stopPropagation();
+		e.preventDefault();
+		file=e.dataTransfer.files;
+	}
+}

@@ -1,4 +1,4 @@
 File-Uploader
 =============
 
-Drag and Drop file uploader
+Basic Drag and Drop file uploader

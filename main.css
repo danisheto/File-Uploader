@@ -1,0 +1,92 @@
+html,body,#webpage{
+	margin:0;
+	width:100%;
+	min-height:100%;
+	color:#333;
+	text-rendering:optimizeLegibility;
+	font-family:Tahoma,Impact, "Arial Black",Verdana,Arial, Helvetica sans-serif;
+}
+#webpage{
+	margin:16px;
+}
+#dropArea{
+	width:50%;
+	margin:0 auto;
+	border:dashed 3px #999;
+}
+div.icon {
+    height: 64px;
+    width: 64px;
+    position: relative;
+    margin:16px auto;
+    overflow: hidden;
+}
+div.icon div.cloudUp {
+    width: 64px;
+    height: 24px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #888;
+    margin-top: 28px;
+}
+
+div.icon div.cloudUp:before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    background: #888;
+    top: 14px;
+    right: 10px;
+}
+
+div.icon div.cloudUp:after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    background: #888;
+    top: 18px;
+    left: 8px;
+}
+
+div.icon div.cloudUpArrow {
+    height: 0px;
+    width: 0px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #FFF transparent;
+    position: absolute;
+    bottom: 24px;
+    left: 22px;
+}
+
+div.icon div.cloudUpArrow:after {
+    content: '';
+    width: 7px;
+    height: 14px;
+    background-color: #FFF;
+    position: absolute;
+    top: 8px;
+    right: -4px;
+}
+#dropArea div#text{
+	text-align:center;
+}
+input[type=file]{
+	width:85px;
+}
+input[type=file], .icon{
+	display:block;
+	margin: 32px auto;
+}
+input[type=file]::after{
+	content:"";
+}
